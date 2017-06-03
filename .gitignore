@@ -1,2 +1,6 @@
 # env
 .env
+# Garbage
+.DS_Store
+# Node Modules
+node_modules/
