@@ -2,6 +2,7 @@
 const express = require('express');
 // invoking express
 const app = express();
+const bodyParser = require('body-parser');
 
 require('dotenv').config();
 
@@ -15,6 +16,11 @@ const time = function(req, res, next){
 
 // importing routes
 const apiRoutes = require('./routes/api');
+
+// body Parser - parse json - populate req.body
+// allows retrieval of data from a POST request
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 
 app.get('/', function(req, res){

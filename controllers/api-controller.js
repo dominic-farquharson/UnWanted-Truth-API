@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const moment = require('moment');
 
 const controller = {};
 
@@ -18,5 +19,16 @@ controller.apod = (req, res) => {
         .then(data => res.json(data))
         .catch(error => res.status(404).send({message: 'Error', error}))
 };
+
+// Near Earth Objects
+controller.neo = (req ,res) => {
+    const url = `https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=${process.env.API_KEY}&size=5`;
+    const date = moment().format("YYYY-MM-DD");
+
+    fetch(url)
+        .then(response => response.json())
+        .then(response => res.json({data:response, date}))
+        .catch(error => res.status(404).send({message: 'Error', error}))    
+}
 
 module.exports = controller;
