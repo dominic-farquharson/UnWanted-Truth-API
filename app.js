@@ -3,6 +3,7 @@ const express = require('express');
 // invoking express
 const app = express();
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 require('dotenv').config();
 
@@ -16,6 +17,9 @@ const time = function(req, res, next){
 
 // importing routes
 const apiRoutes = require('./routes/api');
+
+// cors - enabling for all request
+app.use(cors());
 
 // body Parser - parse json - populate req.body
 // allows retrieval of data from a POST request
