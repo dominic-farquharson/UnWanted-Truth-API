@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 
 require('dotenv').config();
 
@@ -20,6 +21,9 @@ const apiRoutes = require('./routes/api');
 
 // cors - enabling for all request
 app.use(cors());
+
+// Views
+app.set('views', path.join(__dirname, 'views'));
 
 // body Parser - parse json - populate req.body
 // allows retrieval of data from a POST request
