@@ -4,7 +4,7 @@ const moment = require('moment');
 const controller = {};
 
 controller.index = (req, res) => {
-    res.render('index.ejs');
+    res.render('index', {title: 'API Home'});
     // res.status(200).send(`<h1>Api home page </h1>`);
 };
 

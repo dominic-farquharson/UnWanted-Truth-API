@@ -4,6 +4,7 @@ const router = express.Router();
 
 const controller = require('../controllers/api-controller');
 
+
 // mounted on /api - handled by controller's index method
 router.get('/', controller.index);
 router.post('/', (req, res)=> {
@@ -16,4 +17,7 @@ router.get('/apod', controller.apod);
 
 // Neo (Near Earth Object)
 router.get('/neo', controller.neo);
+
+
+
 module.exports = router;
