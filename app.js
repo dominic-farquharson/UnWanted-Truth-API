@@ -50,7 +50,7 @@ app.use('/api/articles', articleRoutes);
 
 // Handling 404 pages
 app.get('*', function(req, res) {
-    res.status(404).json({message: 'That page does not exist'})
+    res.status(404).json({status: 'bad', message: 'That page does not exist'})
 });
 
 // starting server

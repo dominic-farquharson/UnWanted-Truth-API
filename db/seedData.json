@@ -2,16 +2,16 @@
     "data": [
         {
             "author": "Dominic",
-            "title": "Article 1",            
+            "title": "Article-1",            
             "content": {
-                "body": "body of article 1",
+                "body": "body of article 1.",
                 "date": "Deceember",
                 "image_url": "http://placehold.it/250x250"
             }
         },
         {
             "author": "Dominic",
-            "title": "Article 2",            
+            "title": "Article-2",            
             "content": {
                 "body": "body of article 2",
                 "date": "Deceember",
@@ -20,7 +20,7 @@
         },
         {
             "author": "Dominic",
-            "title": "Article 3",
+            "title": "Article-3",
             "content": {
                 "body": "body of article 3",
                 "date": "Deceember",
