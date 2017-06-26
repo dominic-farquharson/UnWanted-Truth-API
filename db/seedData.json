@@ -26,6 +26,15 @@
                 "date": "Deceember",
                 "image_url": "http://placehold.it/250x250"
             }
+        },
+         {
+            "author": "Dominic",
+            "title": "Article-4",
+            "content": {
+                "body": "body of article 4",
+                "date": "Deceember",
+                "image_url": "http://placehold.it/250x250"
+            }
         }
     ]
 }
