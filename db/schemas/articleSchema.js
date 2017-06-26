@@ -1,14 +1,21 @@
 /* importing mongoose */
 const mongoose = require('mongoose');
 
+// add moment 
+
+
 /* Creating new Schema */
 const ArticleSchema = new mongoose.Schema({
-    author: {type: String, required: true},
+    author: {type: String, required: true},        
+    title: String,
     content: {
-        title: String,
+       
         body: String,
         image_url: String,
         date: String
+    },
+    meta: {
+        category:String
     },
     created_at: Date,
     updated_At: Date
@@ -25,8 +32,4 @@ ArticleSchema.pre('save', function(next){
     return next();
 })
 
-/* Using Schema to create model */
-const Article = mongoose.model('Article', ArticleSchema);
-
-// exporting
-module.exports = Article;
+module.exports = ArticleSchema;

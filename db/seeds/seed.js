@@ -1,10 +1,10 @@
 // importing mongoose config
-const mongoose = require('./config');
+const mongoose = require('../config');
 
 // article model
-const ArticleModel = require('./models/article');
+const ArticleModel = require('../../models/article');
 // importing data
-const seedData = require('./seedData');
+const seedData = require('../seedData');
 
 /* Dropping Table */
 ArticleModel.remove({})
