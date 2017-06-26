@@ -1,7 +1,7 @@
 // importing mongoose
 const mongoose = require('mongoose');
 // datatabse url
-const url = `mongodb://localhost/testing`;
+const url = process.env.MONGODB_URI;
 
 // connecting to db 
 mongoose.connect(url);
