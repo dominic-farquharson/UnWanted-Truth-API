@@ -2,7 +2,8 @@
     "data": [
         {
             "author": "Dominic",
-            "title": "Article-1",            
+            "title": "Article-1", 
+            "tag": "Animorphs",           
             "content": {
                 "body": "body of article 1.",
                 "date": "Deceember",
@@ -11,7 +12,8 @@
         },
         {
             "author": "Dominic",
-            "title": "Article-2",            
+            "title": "Article-2", 
+            "tag": "Regicide",           
             "content": {
                 "body": "body of article 2",
                 "date": "Deceember",
@@ -21,6 +23,7 @@
         {
             "author": "Dominic",
             "title": "Article-3",
+            "tag": "Animorphs",
             "content": {
                 "body": "body of article 3",
                 "date": "Deceember",
@@ -30,6 +33,7 @@
          {
             "author": "Dominic",
             "title": "Article-4",
+            "tag": "Animorphs",
             "content": {
                 "body": "body of article 4",
                 "date": "Deceember",
