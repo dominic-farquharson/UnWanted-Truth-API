@@ -15,7 +15,7 @@ seedData.data.forEach(function(element, index) {
     let article = new ArticleModel(element);
     article.save()
         .then(article => {
-            console.log(`article ${article._id} has been saved`); 
+            console.log(`article ${article._id} has been saved =======> ${article}`); 
             mongoose.disconnect()
         })
         .catch(err => console.error('error', err))

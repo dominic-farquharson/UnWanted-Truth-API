@@ -23,4 +23,14 @@ articlesController.findOne = (req, res, next) => {
     .catch(err => console.log('erropr', error))
 }
 
+articlesController.editOne = (req, res , next) => {
+    if(req.query.API_KEY !== process.env.API_KEY) {
+        return res.status(404).send('Access denied')
+    }
+
+    Article.update({title: req.params.articleId}, {
+        title: req.query.title
+    }, e => console.log('e', e))
+}
+
 module.exports = articlesController;
