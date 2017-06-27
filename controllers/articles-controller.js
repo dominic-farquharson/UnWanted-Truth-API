@@ -23,7 +23,7 @@ articlesController.findOne = (req, res, next) => {
     .catch(err => console.log('erropr', error))
 }
 
-articlesController.editOne = (req, res , next) => {
+articlesController.edit = (req, res , next) => {
     if(req.query.API_KEY !== process.env.API_KEY) {
         return res.status(404).send('Access denied')
     }
