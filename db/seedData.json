@@ -23,7 +23,7 @@
         {
             "author": "Dominic",
             "title": "Article-3",
-            "tag": "Animorphs",
+            "tag": "Okay",
             "content": {
                 "body": "body of article 3",
                 "date": "Deceember",
@@ -33,7 +33,7 @@
          {
             "author": "Dominic",
             "title": "Article-4",
-            "tag": "Animorphs",
+            "tags": "Animorphs",
             "content": {
                 "body": "body of article 4",
                 "date": "Deceember",
@@ -43,11 +43,12 @@
            {
             "author": "Dominic",
             "title": "Article-5",
-            "tag": "Gold",
+            "tags": "Change-1",
             "content": {
                 "body": "body of article 5",
                 "date": "Deceember",
-                "image_url": "http://placehold.it/250x250"
+                "image_url": "http://placehold.it/250x250",
+                "tag": "Gold"
             }
         }
     ]
