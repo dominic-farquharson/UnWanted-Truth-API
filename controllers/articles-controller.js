@@ -25,12 +25,16 @@ articlesController.findOne = (req, res, next) => {
 
 articlesController.edit = (req, res , next) => {
     if(req.query.API_KEY !== process.env.API_KEY) {
-        return res.status(404).send('Access denied')
+        return res.status(403).json({
+            status: 'bad',
+            code: 403,
+            msg: 'No API KEY present'
+        });
     }
 
     Article.update({title: req.params.articleId}, {
-        title: req.query.title
-    }, e => console.log('e', e))
+        title: req.body.title
+    }, _ => res.redirect('/api/articles'))
 }
 
 module.exports = articlesController;
